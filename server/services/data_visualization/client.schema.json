@@ -1,0 +1,62 @@
+{
+  "name": "Framework de Visualización de Datos",
+  "description": "Framework para la visualización de datos",
+  "url": "data_visualization",
+  "args": [
+    {
+      "name": "chart",
+      "type": "select",
+      "description": "Estrategia de visualización",
+      "required": true,
+      "options": [
+        { "label": "Diagrama de líneas", "value": "line" },
+        { "label": "Diagrama de dispersión", "value": "scatter" },
+        { "label": "Diagrama de barras", "value": "bar" },
+        { "label": "Histograma", "value": "histogram" },
+        { "label": "Correlación", "value": "correlogram" },
+        { "label": "Diagrama de caja", "value": "box" },
+        { "label": "Densidad", "value": "density" },
+        { "label": "Diagrama de violín", "value": "violin" }
+      ]
+    },
+    {
+      "name": "file",
+      "type": "file",
+      "description": "Archivo de entrada (.csv)",
+      "required": true
+    },
+    {
+      "name": "x",
+      "type": "text",
+      "description": "Variable(s) independiente(s) (separadas por espacios)",
+      "required": true,
+      "placeholder": "Year"
+    },
+    {
+      "name": "y",
+      "type": "text",
+      "description": "Variables dependientes (separadas por espacios)",
+      "required": true,
+      "placeholder": "NA_Sales EU_Sales"
+    },
+    {
+      "name": "agg",
+      "type": "text",
+      "description": "Función de agregación",
+      "required": false,
+      "placeholder": "mean"
+    },
+    {
+      "name": "colors",
+      "type": "text",
+      "description": "Paleta de colores",
+      "required": false,
+      "placeholder": "deep"
+    }
+  ],
+  "response": {
+    "type": "file",
+    "extension": "png",
+    "description": "Visualización generada"
+  }
+}

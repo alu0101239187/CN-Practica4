@@ -110,6 +110,8 @@ export default function Service() {
           display: "flex",
           boxShadow: 5,
           borderRadius: "0px",
+          paddingLeft: "10%",
+          paddingRight: "10%",
         }}
       >
         <Typography
@@ -128,14 +130,9 @@ export default function Service() {
             width: "100%",
           }}
         >
-          <Grid
-            container
-            rowSpacing={3}
-            columnSpacing={6}
-            sx={{ justifyContent: "center", marginBottom: "30px" }}
-          >
+          <Grid container rowSpacing={3} sx={{ justifyContent: "center" }}>
             {service.args.map((arg) => (
-              <Grid key={arg.name} size={{ xs: 12, md: 4 }}>
+              <Grid key={arg.name} size={{ xs: 12, md: 6 }}>
                 <Typography
                   variant="body1"
                   sx={{ marginBottom: "10px", textAlign: "center" }}
@@ -164,6 +161,7 @@ export default function Service() {
             style={{
               backgroundColor: "#48A6A7",
               cursor: "pointer",
+              marginTop: "40px",
             }}
             onClick={async () => {
               submitServiceData(document.querySelector("#serviceForm"));
