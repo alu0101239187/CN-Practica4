@@ -106,7 +106,6 @@ export default function Service() {
     >
       <Card
         sx={{
-          padding: "20px 40px",
           flexDirection: "column",
           display: "flex",
           boxShadow: 5,
@@ -115,7 +114,7 @@ export default function Service() {
       >
         <Typography
           variant="h4"
-          sx={{ fontWeight: "bold", textAlign: "center", marginTop: "20px" }}
+          sx={{ fontWeight: "bold", textAlign: "center", marginTop: "40px" }}
         >
           {service.name}
         </Typography>
@@ -133,11 +132,11 @@ export default function Service() {
             container
             rowSpacing={3}
             columnSpacing={6}
-            mb={3}
-            sx={{ padding: "10px", justifyContent: "center" }}
+            fullWidth
+            sx={{ justifyContent: "center", marginBottom: "30px" }}
           >
             {service.args.map((arg) => (
-              <Grid xs={12} key={arg.name} sx={{ padding: "10px" }}>
+              <Grid key={arg.name} size={{ xs: 12, md: 4 }}>
                 <Typography
                   variant="body1"
                   sx={{ marginBottom: "10px", textAlign: "center" }}
@@ -151,10 +150,10 @@ export default function Service() {
                   required={arg.required}
                   placeholder={arg.placeholder}
                   style={{
-                    width: "100%",
                     padding: "10px",
                     border: "1px solid #ccc",
                     borderRadius: "5px",
+                    width: "80%",
                   }}
                 />
               </Grid>
@@ -176,7 +175,7 @@ export default function Service() {
         </form>
         <div
           style={{
-            marginTop: "30px",
+            margin: "30px",
             textAlign: "center",
             visibility: loadingResult || result ? "visible" : "hidden",
             minHeight: "100px",
@@ -184,7 +183,6 @@ export default function Service() {
             alignItems: "center",
             justifyContent: "center",
             border: result ? "1px solid #ccc" : "none",
-            borderRadius: "5px",
           }}
         >
           {loadingResult ? (
