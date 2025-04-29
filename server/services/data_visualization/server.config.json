@@ -1,0 +1,46 @@
+{
+  "name": "data_visualization_framework",
+  "executer": "python3",
+  "path": "/home/danijoraco/mii/cn/practica4/server/services/framework/data_visualization_framework.py",
+  "uses_arg_parser": true,
+  "args": [
+    {
+      "name": "chart",
+      "type": "string",
+      "required": true
+    },
+    {
+      "name": "file",
+      "type": "file",
+      "required": true
+    },
+    {
+      "name": "x",
+      "type": "string",
+      "required": true
+    },
+    {
+      "name": "y",
+      "type": "string",
+      "required": false
+    },
+    {
+      "name": "agg",
+      "type": "string",
+      "required": false
+    },
+    {
+      "name": "colors",
+      "type": "string",
+      "required": false
+    },
+    {
+      "name": "out",
+      "type": "output"
+    }
+  ],
+  "response": {
+    "type": "file",
+    "format": "png"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "gauss_filter_openmp",
+  "path": "/home/danijoraco/mii/cn/practica4/server/services/gauss_filter_openmp/gauss_filter_openmp",
+  "uses_arg_parser": false,
+  "args": [
+    {
+      "type": "file",
+      "format": "png",
+      "required": true
+    },
+    {
+      "type": "output"
+    }
+  ],
+  "response": {
+    "type": "file",
+    "format": "png"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "multiplication",
+  "path": "/home/danijoraco/mii/cn/practica4/server/services/multiplication/multiplication",
+  "uses_arg_parser": false,
+  "args": [
+    {
+      "name": "a",
+      "type": "number",
+      "required": true
+    },
+    {
+      "name": "b",
+      "type": "number",
+      "required": true
+    }
+  ],
+  "response": {
+    "type": "number"
+  }
+}

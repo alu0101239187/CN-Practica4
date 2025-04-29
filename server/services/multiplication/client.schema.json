@@ -1,0 +1,25 @@
+{
+  "name": "Multiplicación",
+  "description": "Multiplicación de dos números",
+  "url": "multiplication",
+  "args": [
+    {
+      "name": "a",
+      "type": "number",
+      "description": "Primer número",
+      "required": true,
+      "placeholder": 2
+    },
+    {
+      "name": "b",
+      "type": "number",
+      "description": "Segundo número",
+      "required": true,
+      "placeholder": 5
+    }
+  ],
+  "response": {
+    "type": "number",
+    "description": "Resultado de la multiplicación"
+  }
+}

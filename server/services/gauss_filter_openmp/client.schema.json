@@ -1,0 +1,19 @@
+{
+  "name": "Filtro Gauss OpenMP",
+  "description": "Aplicación de un filtro gaussiano sobre una imagen PNG utilizando OpenMP",
+  "url": "gauss_filter_openmp",
+  "args": [
+    {
+      "name": "input",
+      "type": "file",
+      "format": "png",
+      "description": "Imagen de entrada (PNG)",
+      "required": true
+    }
+  ],
+  "response": {
+    "type": "file",
+    "extension": "png",
+    "description": "Imagen filtrada"
+  }
+}
