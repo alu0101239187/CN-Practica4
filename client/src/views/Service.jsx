@@ -132,7 +132,6 @@ export default function Service() {
             container
             rowSpacing={3}
             columnSpacing={6}
-            fullWidth
             sx={{ justifyContent: "center", marginBottom: "30px" }}
           >
             {service.args.map((arg) => (
