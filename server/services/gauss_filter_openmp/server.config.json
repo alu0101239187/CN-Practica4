@@ -1,6 +1,6 @@
 {
   "name": "gauss_filter_openmp",
-  "path": "/home/danijoraco/mii/cn/practica4/server/services/gauss_filter_openmp/gauss_filter_openmp",
+  "path": "services/gauss_filter_openmp/gauss_filter_openmp",
   "uses_arg_parser": false,
   "args": [
     {
